@@ -10,6 +10,8 @@ terraform {
 provider "github" {
   token = var.github_token
   owner = var.github_username
+
+
 }
 
 resource "github_repository" "repo" {
@@ -35,3 +37,5 @@ resource "github_repository" "repo" {
 
   topics = each.value.topics
 }
+
+#added some comments
