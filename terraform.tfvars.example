@@ -1,0 +1,23 @@
+# GitHub credentials
+github_token   = "your_github_token_here"
+github_username = "your_github_username_here"
+
+# Repository definitions
+repositories = {
+  "my_project" = {
+    name        = "my-project"
+    description = "My awesome project"
+    private     = false
+    auto_init   = true
+    topics      = ["terraform", "github"]
+  }
+
+  "my_private_project" = {
+    name        = "my-private-project"
+    description = "My private project"
+    private     = true
+    auto_init   = true
+    has_issues  = true
+    has_wiki    = true
+  }
+}
